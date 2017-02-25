@@ -49,7 +49,7 @@ export default class SearchAtrist extends Component {
             <div className="col-sm-12 header-col">
                 <form className="form-inline" onSubmit={this.onSubmit}>
                     <label className="col-lg-4">
-                      <input type="text" className="form-control" placeholder="Enter a artist name e.g. muse"  onChange={this.onChange} />
+                      <input type="text" className="form-control" placeholder="Enter artist name e.g. muse"  onChange={this.onChange} />
                     </label>
                     <input type="submit" className="btn btn-primary" value="Search" />
                 </form>
