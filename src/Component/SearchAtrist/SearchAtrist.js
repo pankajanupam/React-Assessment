@@ -56,11 +56,11 @@ export default class SearchAtrist extends Component {
             </div>
             <div className="col-sm-12 table-col">
                 <BootstrapTable data={this.state.artists}>
-                    <TableHeaderColumn isKey dataField='id'>ID</TableHeaderColumn>
-                    <TableHeaderColumn dataField='name' dataSort={ true }>Name</TableHeaderColumn>
-                    <TableHeaderColumn dataField='type'>Type</TableHeaderColumn>
-                    <TableHeaderColumn dataField='popularity' dataSort={ true }>Popularity</TableHeaderColumn>
-                    <TableHeaderColumn dataField='genres'>Genres</TableHeaderColumn>
+                    <TableHeaderColumn isKey dataField='id' dataSort={ true }  filter={ { type: 'TextFilter', defaultValue: '' } }>ID</TableHeaderColumn>
+                    <TableHeaderColumn dataField='name' dataSort={ true }  filter={ { type: 'TextFilter', defaultValue: '' } }>Name</TableHeaderColumn>
+                    <TableHeaderColumn dataField='type' dataSort={ true }  filter={ { type: 'TextFilter', defaultValue: '' } }>Type</TableHeaderColumn>
+                    <TableHeaderColumn dataField='popularity' dataSort={ true }  filter={ { type: 'TextFilter', defaultValue: '' } }>Popularity</TableHeaderColumn>
+                    <TableHeaderColumn dataField='genres' dataSort={ true }  filter={ { type: 'TextFilter', defaultValue: '' } }>Genres</TableHeaderColumn>
                 </BootstrapTable>
             </div>
         </div>
