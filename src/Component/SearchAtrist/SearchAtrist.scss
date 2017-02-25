@@ -26,5 +26,28 @@
 }
 
 .table-col{
-    margin-top: 20px
+    margin-top: 20px;
+
+    thead{
+        tr{
+            background: #66D37E;
+            color:#fff;
+            .order{
+                .dropdown,.dropup{
+                    .caret{
+                        color:rgb(240,240,240) !important
+                    }
+                }
+                &.dropup,&.dropdown,&{
+                    .caret{
+                        color:rgb(255,255,255) !important
+                    }
+                }
+            }
+        }
+    }
+    
+    tr:nth-child(even){
+        background: #eee
+    }
 }

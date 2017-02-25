@@ -57,9 +57,9 @@ export default class SearchAtrist extends Component {
             <div className="col-sm-12 table-col">
                 <BootstrapTable data={this.state.artists}>
                     <TableHeaderColumn isKey dataField='id'>ID</TableHeaderColumn>
-                    <TableHeaderColumn dataField='name'>Name</TableHeaderColumn>
+                    <TableHeaderColumn dataField='name' dataSort={ true }>Name</TableHeaderColumn>
                     <TableHeaderColumn dataField='type'>Type</TableHeaderColumn>
-                    <TableHeaderColumn dataField='popularity'>Popularity</TableHeaderColumn>
+                    <TableHeaderColumn dataField='popularity' dataSort={ true }>Popularity</TableHeaderColumn>
                     <TableHeaderColumn dataField='genres'>Genres</TableHeaderColumn>
                 </BootstrapTable>
             </div>
