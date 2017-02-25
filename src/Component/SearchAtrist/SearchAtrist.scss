@@ -1,0 +1,30 @@
+.header-col {
+    background-color: #222;
+    padding: 20px;
+    color: #000;
+
+    .form-inline{
+        padding:20px 0;
+
+        label{
+            padding-right:0;
+            .form-control{
+                width: 100%;
+            }
+        }
+
+        input{
+            height: 40px;
+            width: 100%;
+
+            &[type="submit"]{
+                width: auto;
+                margin-left: 5px;
+            }
+        }
+    }
+}
+
+.table-col{
+    margin-top: 20px
+}
